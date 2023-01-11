@@ -1,0 +1,16 @@
+.counterwidth {
+  min-width: 185px;
+  padding: 20px 0px;
+}
+
+h3.new-count span {
+  font-size: 30px;
+}
+
+p.u {
+  font-size: 22px;
+}
+
+h2.counting {
+  margin-bottom: 15px;
+}
