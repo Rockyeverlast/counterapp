@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+// import axios from "axios";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
-import styles from "../components/numbercounter.module.css";
+import styles from "./numbercounter.module.css";
 
 // const baseURL = "https://sattvaconnect.com/api/get-user-classes-details";
 
@@ -12,19 +12,19 @@ const NumberCounter = () => {
     triggerOnce: true,
   });
 
-  useEffect(() => {
-    axios
-      .get("https://sattvaconnect.com/api/get-user-classes-details")
-      .then((response) => {
-        // handle success
-        // this.setState({ seriesdata: response.data.reverse() });
-        console.log(response.data);
-      })
-      .catch((error) => {
-        // handle error
-        console.log(error);
-      });
-  }, []);
+  // useEffect(() => {
+  //   axios
+  //     .get("https://sattvaconnect.com/api/get-user-classes-details")
+  //     .then((response) => {
+  //       // handle success
+  //       // this.setState({ seriesdata: response.data.reverse() });
+  //       console.log(response.data);
+  //     })
+  //     .catch((error) => {
+  //       // handle error
+  //       console.log(error);
+  //     });
+  // }, []);
 
   return (
     <section className="new-secHomeCount">
